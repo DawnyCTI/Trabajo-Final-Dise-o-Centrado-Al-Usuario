@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+    <link rel="stylesheet" href="estilo1.css">
+</head>
+
+<body>
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <img src="./assets/images/logo.svg" width="162" height="50" alt="Logo de Soluciones Diarias">
+        </a>
+    <main>
+        <section id="registro" class="section">
+            <h2>Registrar Usuario</h2>
+            <form id="registroForm" class="form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" required>
+                <label for="foto">Foto de Perfil:</label>
+                <input type="file" id="foto" accept="image/*" required>
+                <button type="submit" class="btn">Registrar</button>
+            </form>
+        </section>
+
+        <section id="consulta" class="section">
+            <h2>Consultar Usuario por ID</h2>
+            <form id="consultaForm" class="form">
+                <label for="userId">ID de Usuario:</label>
+                <input type="text" id="userId" required>
+                <button type="submit" class="btn">Consultar</button>
+            </form>
+        </section>
+
+        <section id="resultado" class="section">
+            <h2>Resultado de la Consulta</h2>
+            <div id="usuarioEncontrado"></div>
+        </section>
+
+    </main>
+    <script src="lo.js"></script>
+</body>
+
+</html>
